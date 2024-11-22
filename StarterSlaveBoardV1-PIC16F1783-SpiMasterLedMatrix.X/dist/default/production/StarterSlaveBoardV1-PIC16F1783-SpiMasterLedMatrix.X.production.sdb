@@ -1,0 +1,231 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1783 ]
+[d frameptr 6 ]
+"5 /opt/microchip/xc8/v2.50/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"10 /opt/microchip/xc8/v2.50/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 /opt/microchip/xc8/v2.50/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.50/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"26 /home/i9bal/Microchip/Projects-GitHub/StarterSlaveBoardV1-PIC16F/StarterSlaveBoardV1-PIC16F1783-SpiMasterLedMatrix.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"5 /home/i9bal/Microchip/Projects-GitHub/StarterSlaveBoardV1-PIC16F/StarterSlaveBoardV1-PIC16F1783-SpiMasterLedMatrix.X/program.c
+[v _delay_x1o5us delay_x1o5us `(v  1 e 1 0 ]
+"10
+[v _delay_x24o25us delay_x24o25us `(v  1 e 1 0 ]
+"15
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+"23
+[v _programInitialize programInitialize `(v  1 e 1 0 ]
+"47
+[v _programLoop programLoop `(v  1 e 1 0 ]
+"63
+[v _ledMatrix_AllOff ledMatrix_AllOff `(v  1 e 1 0 ]
+"72
+[v _ledMatrix_SetDisplay ledMatrix_SetDisplay `(v  1 e 1 0 ]
+"115
+[v _spi_Initialize spi_Initialize `(v  1 e 1 0 ]
+"128
+[v _spi_TransferByteSlave1 spi_TransferByteSlave1 `(uc  1 e 1 0 ]
+[s S216 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"677 /opt/microchip/mplabx/v6.20/packs/Microchip/PIC12-16F1xxx_DFP/1.7.242/xc8/pic/include/proc/pic16f1783.h
+[u S225 . 1 `S216 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES225  1 e 1 @17 ]
+"1138
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+[s S52 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1298
+[s S61 . 1 `uc 1 TRISC 1 0 :8:0 
+]
+[u S63 . 1 `S52 1 . 1 0 `S61 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES63  1 e 1 @142 ]
+"2208
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S141 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 LATA3 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 LATA6 1 0 :1:6 
+`uc 1 LATA7 1 0 :1:7 
+]
+"2228
+[s S150 . 1 `uc 1 LATA 1 0 :8:0 
+]
+[u S152 . 1 `S141 1 . 1 0 `S150 1 . 1 0 ]
+[v _LATAbits LATAbits `VES152  1 e 1 @268 ]
+[s S99 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2368
+[s S108 . 1 `uc 1 LATC 1 0 :8:0 
+]
+[u S110 . 1 `S99 1 . 1 0 `S108 1 . 1 0 ]
+[v _LATCbits LATCbits `VES110  1 e 1 @270 ]
+[s S78 . 1 `uc 1 CCP2SEL 1 0 :1:0 
+`uc 1 RXSEL 1 0 :1:1 
+`uc 1 TXSEL 1 0 :1:2 
+`uc 1 SDISEL 1 0 :1:3 
+`uc 1 SCKSEL 1 0 :1:4 
+`uc 1 SDOSEL 1 0 :1:5 
+`uc 1 CCP1SEL 1 0 :1:6 
+`uc 1 C2OUTSEL 1 0 :1:7 
+]
+"2988
+[u S87 . 1 `S78 1 . 1 0 ]
+[v _APFCONbits APFCONbits `VES87  1 e 1 @285 ]
+"3226
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"4629
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @529 ]
+"4667
+[v _SSPADD SSPADD `VEuc  1 e 1 @530 ]
+[s S167 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"4765
+[u S176 . 1 `S167 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES176  1 e 1 @532 ]
+[s S188 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"4894
+[s S197 . 1 `uc 1 SSPM 1 0 :4:0 
+]
+[u S199 . 1 `S188 1 . 1 0 `S197 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES199  1 e 1 @533 ]
+"20 /home/i9bal/Microchip/Projects-GitHub/StarterSlaveBoardV1-PIC16F/StarterSlaveBoardV1-PIC16F1783-SpiMasterLedMatrix.X/program.c
+[v _counter counter `uc  1 e 1 0 ]
+"26 /home/i9bal/Microchip/Projects-GitHub/StarterSlaveBoardV1-PIC16F/StarterSlaveBoardV1-PIC16F1783-SpiMasterLedMatrix.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"35
+} 0
+"47 /home/i9bal/Microchip/Projects-GitHub/StarterSlaveBoardV1-PIC16F/StarterSlaveBoardV1-PIC16F1783-SpiMasterLedMatrix.X/program.c
+[v _programLoop programLoop `(v  1 e 1 0 ]
+{
+"48
+[v programLoop@i i `uc  1 a 1 12 ]
+"50
+[v programLoop@transferDoneFlag transferDoneFlag `a  1 a 1 11 ]
+"49
+[v programLoop@dataReturn dataReturn `uc  1 a 1 10 ]
+"60
+} 0
+"128
+[v _spi_TransferByteSlave1 spi_TransferByteSlave1 `(uc  1 e 1 0 ]
+{
+[v spi_TransferByteSlave1@data data `uc  1 p 1 wreg ]
+"133
+[v spi_TransferByteSlave1@rxData rxData `uc  1 a 1 1 ]
+"128
+[v spi_TransferByteSlave1@data data `uc  1 p 1 wreg ]
+"131
+[v spi_TransferByteSlave1@data data `uc  1 p 1 0 ]
+"149
+} 0
+"72
+[v _ledMatrix_SetDisplay ledMatrix_SetDisplay `(v  1 e 1 0 ]
+{
+[v ledMatrix_SetDisplay@ledWord ledWord `us  1 p 2 6 ]
+"113
+} 0
+"63
+[v _ledMatrix_AllOff ledMatrix_AllOff `(v  1 e 1 0 ]
+{
+"70
+} 0
+"23
+[v _programInitialize programInitialize `(v  1 e 1 0 ]
+{
+"45
+} 0
+"115
+[v _spi_Initialize spi_Initialize `(v  1 e 1 0 ]
+{
+[v spi_Initialize@fosc fosc `ul  1 p 4 0 ]
+[v spi_Initialize@baudrate baudrate `us  1 p 2 4 ]
+"126
+} 0
+"5 /opt/microchip/xc8/v2.50/pic/sources/c99/common/__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"5
+[v ___lldiv@divisor divisor `ul  1 p 4 0 ]
+[v ___lldiv@dividend dividend `ul  1 p 4 4 ]
+"30
+} 0
+"15 /home/i9bal/Microchip/Projects-GitHub/StarterSlaveBoardV1-PIC16F/StarterSlaveBoardV1-PIC16F1783-SpiMasterLedMatrix.X/program.c
+[v _delay_ms delay_ms `(v  1 e 1 0 ]
+{
+"16
+[v delay_ms@i i `ul  1 a 4 10 ]
+"15
+[v delay_ms@delay delay `ul  1 p 4 6 ]
+"17
+} 0
+"10
+[v _delay_x24o25us delay_x24o25us `(v  1 e 1 0 ]
+{
+"11
+[v delay_x24o25us@i i `us  1 a 2 4 ]
+"10
+[v delay_x24o25us@delay delay `us  1 p 2 2 ]
+"12
+} 0
+"5
+[v _delay_x1o5us delay_x1o5us `(v  1 e 1 0 ]
+{
+[v delay_x1o5us@delay delay `uc  1 p 1 wreg ]
+"6
+[v delay_x1o5us@i i `uc  1 a 1 1 ]
+"5
+[v delay_x1o5us@delay delay `uc  1 p 1 wreg ]
+[v delay_x1o5us@delay delay `uc  1 p 1 0 ]
+"7
+} 0

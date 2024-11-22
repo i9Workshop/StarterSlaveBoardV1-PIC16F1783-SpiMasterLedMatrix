@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/default/production/StarterSlaveBoardV1-PIC16F1783-SpiMasterLedMatrix.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>4096</length>
+      <used>469</used>
+      <free>3627</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>512</length>
+      <used>27</used>
+      <free>485</free>
+    </memory>
+  </executable>
+</project>
